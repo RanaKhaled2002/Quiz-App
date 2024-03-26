@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Quiz App</title>
+
+        <!-- Css Link -->
+        <link
+        rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/index-style.css">
+    </head>
+    <body>
+        <!-- Setting Your Quiz -->
+        <section id="setting" class="container position-absolute top-50 start-50 translate-middle w-75 ">
+            <div class="bg-white animate__animated animate__backInRight">
+               <div class="row">
+                <div class="col-md-12">
+                    <h1 class="text-center bg-body-secondary py-5 main-color">Setting Your Quiz</h1>
+
+                    <div class="p-5">
+                        <label for="Category" class="py-2 main-color">Category</label>
+                        <select id="select" class="form-select" aria-label="Default select example" id="Category">
+                            <option value="9" selected>General Knowledge</option>
+                            <option value="23">History</option>
+                            <option value="24">Politics</option>
+                            <option value="25">Art</option>
+                            <option value="18">Science: Computers</option>
+                            <option value="14">Entertaniment: Television</option>
+                            <option value="11">Entertaniment: Film</option>
+                            <option value="12">Entertaniment: Music</option>
+                            <option value="15">Entertaniment: Video Games</option>
+                        </select>
+    
+                        <label class="py-2 main-color">Difficulty</label><br>
+                        <input id="1" type="radio" class="form-check-input" name="difficulty" value="easy" checked><label for="1" class="px-2"> Easy</label> <br>
+                        <input id="2" type="radio" class="form-check-input" name="difficulty" value="medium"> <label for="2" class="px-2"> Medium</label> <br>
+                        <input  id="3" type="radio" class="form-check-input" name="difficulty" value="hard"> <label for="3" class="px-2"> Hard</label> <br>
+    
+                        <input id="numberOfQuestion" type="number" placeholder="Number Of Questions" class="form-control my-3" min="1" max="50" required>
+    
+                        <div class="py-2 d-flex flex-column align-items-end">
+                            <p id="message" class="bg-message p-3 rounded-3 w-100">Please Enter Number Of Questions</p>
+                            <button id="startBtn" class="btn w-100 h-100 my-2 py-2 btn-main rounded-pill text-white ">Start</button>
+                        </div>
+                        
+                    </div>
+                </div>
+               </div>
+            </div>
+        </section>
+
+        <!-- Quiz -->
+        <section id="quiz" class="container position-absolute top-50 start-50 translate-middle w-75 ">
+            <div class="bg-white animate__animated animate__backInRight">
+               <div class="row">
+                <div class="col-md-">
+                    <div class="bg-body-secondary position-relative">
+                        <h1 class="text-center  py-4 main-color">Quiz</h1>
+                        <h5 id="current" class="text-white p-3 btn-main rounded-5 float-end position-absolute question"></h5>
+                    </div>
+                    <div class="p-3">
+                        <p id="myQuestion" class="main-color"></p>
+                        <div id="myAnswers">
+                        </div>
+                    </div>
+                    <div class="p-3 d-flex flex-column align-items-end">
+                        <p id="message2" class="bg-message p-3 rounded-3 w-100">Please Choose Your Answer</p>
+                        <button id="submitBtn" class="btn w-100 h-100 my-2 py-2 btn-main rounded-pill text-white ">Submit</button>
+                    </div>
+                </div>
+               </div>
+                
+            </div>
+        </section>
+
+        <!-- Score -->
+        <section id="score" class="container position-absolute top-50 start-50 translate-middle w-75 ">
+            <div class="bg-white animate__animated animate__backInRight">
+               <div class="row">
+                <div class="col-md-12">
+                    <div class="bg-body-secondary position-relative">
+                        <h1 class="text-center  py-4 main-color">Finsh</h1>
+                    </div>
+                    <div class="p-3 main-color text-center">
+                        <h5>Score</h5>
+                        <p id="addScore">0</p>
+                        <p id="success" class="text-success">Sucess</p>
+                        <p id="fail" class="text-danger">Fail</p>
+                    </div>
+                    <div class="p-3 d-flex justify-content-between align-items-center">
+                        <button id="tryAgainBtn" class="btn w-100 h-100 my-2 py-2 btn-main rounded-pill text-white ">Try Again?</button>
+                    </div>
+                </div>
+               </div> 
+            </div>
+        </section>
+
+       
+        <!-- Java Script Link -->
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/jquery-3.7.1.min.js"></script>
+        <script src="js/index.js" type="module"></script>
+    </body>
+</html>

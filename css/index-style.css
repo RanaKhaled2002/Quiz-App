@@ -1,0 +1,43 @@
+:root
+{
+    --main-color:#800080;
+    --red:rgba(255,0,0,0.3);
+}
+body
+{
+    background-image: url(../images/Wave-100s-1366px\ \(2\).svg);
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: cover;
+}
+.main-color
+{
+    color: var(--main-color);
+}
+.btn-main
+{
+    background-color: var(--main-color);
+}
+.bg-message
+{
+    color: red;
+    background-color: var(--red);
+}
+#message,#correct,#incorrect,#message2,#quiz,#score,#show,#success,#fail
+{
+    display: none;
+}
+button:hover
+{
+    color: white !important;
+    background-color: var(--main-color) !important;
+}
+.question
+{
+    bottom: 10px;
+    right: 5px;
+}
+.w-10
+{
+    width: 10%;
+}
